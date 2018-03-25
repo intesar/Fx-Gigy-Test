@@ -1,0 +1,42 @@
+
+---
+version: '1'
+
+# App (Project) name
+name: Fx-GitHub-Test
+
+# App description
+description: GitHub API Test Sample
+
+# license
+licenses:
+  - APACHE LICENSE, VERSION 2.
+
+# App environments
+environments:
+  - name: gigy
+    baseUrl: http://localhost:8000/gigy
+    # app access credentials
+    auths:
+      - name: Default
+        authType: OAuth_2_0
+        username: gigy
+        password: secret
+        clientId: username=peter@example.com
+        clientSecret: password
+        id: gigy
+        accessTokenUri: http://localhost:8000/gigy/oauth/token
+        userAuthorizationUri:
+        clientAuthenticationScheme: form
+        scope: read,write
+        grantType: password
+
+# Job profiles
+jobs:
+  - name: gigy
+    environment: gigy
+    tags:
+      - V1
+    regions: FxLabs/US_WEST_1
+    #cron: '0 30 * ? * *'
+    #issueTracker: FxLabs/Fx-GitHub-Test
