@@ -20,10 +20,10 @@ environments:
     auths:
       - name: Default
         authType: OAuth_2_0
-        username: peter@example.com
-        password: password
-        clientId: gigy
-        clientSecret: secret
+        username: gigy
+        password: secret
+        clientId: peter@example.com
+        clientSecret: password
         id: gigy
         accessTokenUri: http://localhost:8000/gigy/oauth/token
         userAuthorizationUri:
