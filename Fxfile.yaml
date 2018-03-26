@@ -20,7 +20,7 @@ environments:
     auths:
       - name: Default
         authType: OAuth_2_0
-        username: username=peter@example.com
+        username: peter@example.com
         password: password
         clientId: gigy
         clientSecret: secret
