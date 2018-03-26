@@ -27,8 +27,8 @@ environments:
         id: gigy
         accessTokenUri: http://localhost:8000/gigy/oauth/token
         #userAuthorizationUri: http://localhost:8000/gigy/oauth/token
-        clientAuthenticationScheme: form
-        authorizationScheme: form
+        #clientAuthenticationScheme: form
+        #authorizationScheme: form
         scope: read,write
         grantType: password
 
